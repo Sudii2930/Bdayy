@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 1st Birthday Geluu!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top right, #ffe4e1, #ffd700);
+      font-family: 'Comic Neue', cursive;
+      overflow-x: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #ff4081;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #6a1b9a;
+    }
+
+    .balloons {
+      position: relative;
+      height: 300px;
+      margin-bottom: 2rem;
+    }
+
+    .balloon {
+      width: 80px;
+      height: 100px;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .balloon:nth-child(1) { left: 20%; background: #ff8a80; animation-delay: 0s; }
+    .balloon:nth-child(2) { left: 40%; background: #80d8ff; animation-delay: 1s; }
+    .balloon:nth-child(3) { left: 60%; background: #ccff90; animation-delay: 2s; }
+    .balloon:nth-child(4) { left: 80%; background: #ffd180; animation-delay: 3s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-100px); }
+    }
+
+    .message {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .cake {
+      margin-top: 2rem;
+      animation: pop 1s ease-out forwards;
+      transform: scale(0);
+    }
+
+    .geluu-img {
+      margin-top: 2rem;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      animation: pop 1s ease-out forwards;
+    }
+
+    @keyframes pop {
+      to { transform: scale(1); }
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy 1st Birthday,Geluu❤️😘🎂</h1>
+    <h2>little star of our home🌟</h2>
+
+    <div class="balloons">
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+      <div class="balloon"></div>
+    </div>
+
+    <img class="geluu-img" src="babuu.jpg" alt="Geluu's photo" />
+
+    <div class="message">
+      <p>Dear Geluu,</p>
+      <p>Today you turn ONE! You’ve filled our hearts with so much joy, laughter, and love in just one year. Watching you grow is the greatest gift of all. You’re our little bundle of sunshine and mischief!</p>
+      <p>Here’s to many more years of cuddles, giggles, and happiness. 🐣💖</p>
+      <p><strong>With all our love,</strong><br>Your Didiii💕</p>
+    </div>
+
+    <img class="cake" src="https://cdn.pixabay.com/photo/2020/12/22/15/13/birthday-cake-5851751_1280.png" alt="Birthday Cake" width="200" />
+
+    <footer> Love You Nandulii🐻</footer>
+  </div>
+</body>
+</html>
